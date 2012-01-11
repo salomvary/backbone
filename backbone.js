@@ -844,7 +844,7 @@
           this._updateHash(this.iframe.location, frag, options.replace);
         }
       }
-      if (options.trigger) this.loadUrl(fragment);
+      if (options.trigger) return this.loadUrl(fragment);
     },
 
     // Update the hash location, either replacing the current entry, or adding
